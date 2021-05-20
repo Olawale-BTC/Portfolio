@@ -10,3 +10,26 @@ function convertFahrToCelcius(Fahr) {
         return `${errorMessage} is not a valid number but a/an ${typeof Fahr}`
     }
 }
+
+
+
+
+
+function checkYuGiOh(n) {
+    
+    for (let n = 0; n <= n + 1; n++)
+
+    if ((n % 30) == 0) {
+        return "yu-gi-oh" + " "
+    } else if ((n % 10) == 0) {
+        return "yu-gi" + " "
+    } else if ((n % 2) == 0) {
+        return "yu" + " "
+    } else if ((n % 3) == 0) {
+        return "gi" + " "
+    } else if ((n % 5) == 0) {
+        return "oh" + " "
+    } else {
+        return n + " "
+    }
+}

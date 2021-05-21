@@ -18,7 +18,7 @@ function convertFahrToCelcius(Fahr) {
 //Question 2
 
 function checkYuGiOh(n) {
-    for (let a = 1; a <= n ; a++)
+    for (let a = 1; a < n + 1; a++)
     if ((a % 30) == 0) {
         console.log("yu-gi-oh");
     } 

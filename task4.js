@@ -18,24 +18,29 @@ function convertFahrToCelcius(Fahr) {
 //Question 2
 
 function checkYuGiOh(n) {
-    for (let a = 1; a < n + 1; a++)
-    if ((a % 30) == 0) {
-        console.log("yu-gi-oh");
-    } 
-    else if ((a % 10) == 0) {
-        console.log("yu-gi");
-    } 
-    else if ((a % 2) == 0) {
-        console.log("yu");
-    } 
-    else if ((a % 3) == 0) {
-        console.log("gi");
-    } 
-    else if ((a % 5) == 0) {
-        console.log("oh");
-    } 
-    else {
-        console.log(a);
+    if (typeof parseInt(n) == "number") {
+        for(let a = 1; a < parseInt(n) + 1; a++)
+        if ((a % 30) == 0) {
+            console.log("yu-gi-oh");
+        } 
+        else if ((a % 10) == 0) {
+            console.log("yu-gi");
+        } 
+        else if ((a % 2) == 0) {
+            console.log("yu");
+        } 
+        else if ((a % 3) == 0) {
+            console.log("gi");
+        } 
+        else if ((a % 5) == 0) {
+            console.log("oh");
+        } 
+        else {
+            console.log(a);
+        }
     }
+    else {
+      console.log("invalid parameter:" + n);
+    }   
 }
 

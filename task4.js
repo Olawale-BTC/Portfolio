@@ -1,3 +1,5 @@
+// Question 1
+
 function convertFahrToCelcius(Fahr) {
     degreeCelcius = 0;
     errorMessage = JSON.stringify(Fahr)
@@ -13,23 +15,27 @@ function convertFahrToCelcius(Fahr) {
 
 
 
-
+//Question 2
 
 function checkYuGiOh(n) {
-    
-    for (let n = 0; n <= n + 1; n++)
-
-    if ((n % 30) == 0) {
-        return "yu-gi-oh" + " "
-    } else if ((n % 10) == 0) {
-        return "yu-gi" + " "
-    } else if ((n % 2) == 0) {
-        return "yu" + " "
-    } else if ((n % 3) == 0) {
-        return "gi" + " "
-    } else if ((n % 5) == 0) {
-        return "oh" + " "
-    } else {
-        return n + " "
+    for (let a = 1; a <= n ; a++)
+    if ((a % 30) == 0) {
+        console.log("yu-gi-oh");
+    } 
+    else if ((a % 10) == 0) {
+        console.log("yu-gi");
+    } 
+    else if ((a % 2) == 0) {
+        console.log("yu");
+    } 
+    else if ((a % 3) == 0) {
+        console.log("gi");
+    } 
+    else if ((a % 5) == 0) {
+        console.log("oh");
+    } 
+    else {
+        console.log(a);
     }
 }
+
